@@ -73,14 +73,17 @@ const components = {
     Button: {
         variants: {
             buttonPrimary: () => ({
-                bg: '#ffdaa9',
-                color: '#000000',
-                fontSize: 'md',
+                bg: 'transparent linear-gradient(90deg, #2E3BF58F 0%, #338CF2DF 57%, #2C94F2E6 100%) 0% 0% no-repeat padding-box',
+                color: '#ffffff',
+                fontSize: '14px',
                 borderRadius: '50px',
                 position: 'relative',
                 transition: '.3s ease-in-out',
                 zIndex: 2,
-                _hover: {},
+                _hover: {
+                    bg: 'transparent linear-gradient(90deg,  #338CF2DF  0%, #2E3BF58F 57%, #2C94F2E6 100%) 0% 0% no-repeat padding-box',
+                    color: '#d1d1d1',
+                },
             }),
             buttonSecondary: () => ({
                 bg: '#000000',
