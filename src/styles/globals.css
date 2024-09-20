@@ -3,9 +3,15 @@
   --foreground: #171717;
 
   --color-text-primary: #0CD7E2;
+--color-text: #3d2073;
+
   --color-border:#0CD7E2;
+  --color-border-2: #00f4be;
 
   --bg-gradient-card: linear-gradient(90deg, rgba(161,204,249,1) 0%, rgba(187,139,251,1) 100%);
+  --bg-gradient-card-2: linear-gradient(90deg, rgba(187,139,251,0.186734068627451) 0%, rgba(187,139,251,1) 100%);
+  --bg-component:#140833;
+  --bg-footer: #140833;
 }
 
 html,

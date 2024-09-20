@@ -2,9 +2,13 @@ import Head from "next/head";
 import Layout from "@/components/layout";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import SectionOne from "@/components/section-one";
-import SectionTwo from "@/components/section-two";
-import SectionThree from "@/components/section-three";
+import SectionOne from "@/components/sections/section-one";
+import SectionTwo from "@/components/sections/section-two";
+import SectionThree from "@/components/sections/section-three";
+import SectionFour from "@/components/sections/SectionFour";
+import SectionFive from "@/components/sections/section-five";
+import SectionSix from "@/components/sections/section-six";
+import SectionSeven from "@/components/sections/section-seven";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -32,9 +36,19 @@ export default function Home() {
         <SectionOne />
         {/* TRABAJAMOS PARA INPULSAR */}
         <SectionTwo />
+        {/* ICONS */}
         <SectionThree />
-        <Footer />
+        {/* ECOSYSTEMS */}
+        <SectionFour />
+        {/* ECOSISTEMA FINANCIERO */}
+        <SectionFive />
+        {/* GANANCIAS */}
+        <SectionSix />
+
+        <SectionSeven />
       </Layout>
+
+      <Footer />
     </>
   );
 }
