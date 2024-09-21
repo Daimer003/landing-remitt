@@ -10,8 +10,15 @@
 
   --bg-gradient-card: linear-gradient(90deg, rgba(161,204,249,1) 0%, rgba(187,139,251,1) 100%);
   --bg-gradient-card-2: linear-gradient(90deg, rgba(187,139,251,0.186734068627451) 0%, rgba(187,139,251,1) 100%);
+  --bg-gradient-card-3: linear-gradient(90deg, rgb(188, 139, 251) 0%, rgb(142, 59, 250) 100%);
+  --bg-gradient-card-4: linear-gradient(90deg, rgba(201,241,243,1) 0%, rgba(118,182,244,1) 45%, rgba(29,21,80,1) 100%);
   --bg-component:#140833;
   --bg-footer: #140833;
+  --bg-footer-2: #07040e;
+
+  --bg-footer-card-1:  #6021b6;
+  --bg-footer-card-2:  #2292a8;
+  --bg-footer-card-3:  #02cd77;
 }
 
 html,

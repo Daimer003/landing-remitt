@@ -9,6 +9,7 @@ import SectionFour from "@/components/sections/SectionFour";
 import SectionFive from "@/components/sections/section-five";
 import SectionSix from "@/components/sections/section-six";
 import SectionSeven from "@/components/sections/section-seven";
+import SectionNine from "@/components/sections/section-nine";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -46,6 +47,8 @@ export default function Home() {
         <SectionSix />
 
         <SectionSeven />
+
+        <SectionNine />
       </Layout>
 
       <Footer />

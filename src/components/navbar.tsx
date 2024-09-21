@@ -15,7 +15,17 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box display="flex" as="nav" padding="10px">
+    <Box
+      as="nav"
+      display="flex"
+      w="100%"
+      maxW="1600px"
+      padding="10px"
+      css={{ backdropFilter: "blur(10px)" }}
+      bg="#dbdbdbdc"
+      position="fixed"
+      zIndex={10}
+    >
       <Box
         display={{ base: "none", md: "flex" }}
         w="100%"

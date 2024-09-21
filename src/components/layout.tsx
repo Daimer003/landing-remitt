@@ -7,16 +7,10 @@ type Prop = {
 
 const Layout = ({ children }: Prop) => {
   return (
-    <Box
-      display="flex"
-      w="100%"
-      justifyContent="center"
-      backdropFilter="auto"
-      backdropBlur="8px"
-    >
+    <Box display="flex" w="100%" justifyContent="center" backdropFilter="auto">
+      <Navbar />
       <Box display="flex" flexDir="column" w="100%" maxW="1600px" h="auto">
-        <Navbar />
-        <Box>{children}</Box>
+        {children}
       </Box>
     </Box>
   );

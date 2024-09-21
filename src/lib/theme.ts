@@ -11,7 +11,7 @@ const activeLabelStyles = {
 const styles = {
     global: () => ({
         body: {
-            bg: '#ededed',
+            bg: '#dbdbdb',
             "html, body": {
                 height: "100%",
                 overflow: "hidden",

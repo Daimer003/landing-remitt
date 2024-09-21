@@ -9,6 +9,7 @@ const Header = () => {
       position="relative"
       w="100%"
       padding="20px"
+      marginTop="80px"
     >
       <Box
         display="flex"
@@ -47,7 +48,7 @@ const Header = () => {
       </Box>
 
       {/* ANIMACIÓN LOTTIE */}
-      <Box display="flex" right={0} position="absolute" zIndex={0}>
+      <Box display="flex" w="50%" right={0} position="absolute" zIndex={0}>
         <DotLottieReact src="/assets/row.json" loop autoplay />
       </Box>
     </Box>
