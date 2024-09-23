@@ -10,6 +10,7 @@ import SectionFive from "@/components/sections/section-five";
 import SectionSix from "@/components/sections/section-six";
 import SectionSeven from "@/components/sections/section-seven";
 import SectionNine from "@/components/sections/section-nine";
+import Gradient from "@/components/sections/gradient";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -32,6 +33,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
+
+      <Gradient 
+        right={-100}
+        top={-200}
+        background='var(--gradient-1)'
+       />
+
         <Header />
         {/* VIDEO  */}
         <SectionOne />

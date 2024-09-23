@@ -7,11 +7,48 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerBody,
+  Stack,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import NextLink from "next/link";
 
-const Navbar = () => {
+interface LinkItemProps {
+  href: string;
+  path: string;
+  target?: string;
+  children: React.ReactNode;
+  props?: any;
+}
+
+const LinkItem = ({
+  href,
+  path,
+  target,
+  children,
+  ...props
+}: LinkItemProps) => {
+  return (
+    <NextLink href={href} passHref target={target}>
+      <Box
+        p={2}
+        width="100%"
+        display="inline-flex"
+        alignItems="center"
+        gap="5px"
+        fontSize='xl'
+        color='black'
+        {...props}
+      >
+        {children}
+      </Box>
+    </NextLink>
+  );
+};
+
+const Navbar = (props: any) => {
+  const { path } = props;
+
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -21,8 +58,8 @@ const Navbar = () => {
       w="100%"
       maxW="1600px"
       padding="10px"
-      css={{ backdropFilter: "blur(10px)" }}
-      bg="#dbdbdbdc"
+      css={{ backdropFilter: "blur(6px)" }}
+      bg="#dbdbdb53"
       position="fixed"
       zIndex={10}
     >
@@ -45,13 +82,27 @@ const Navbar = () => {
             }}
           />
         </Box>
-
-        <Box display="flex" gap="40px" color="black">
-          <Link href="#">Nosotros</Link>
-          <Link href="#">Ecosistema</Link>
-          <Link href="#">Road map</Link>
-        </Box>
-
+        <Stack
+        display={{ base: "none", md: "flex" }}
+        direction={{ base: "column", md: "row" }}
+        width={{ base: "full", md: "auto" }}
+        justifyContent='center'
+        alignItems="center"
+        flexGrow={1}
+        mt={{ base: 4, md: 0 }}
+      >
+         <LinkItem href="/works" path={path}>
+         Nosotros
+        </LinkItem>
+        <LinkItem href="/works" path={path}>
+        Ecosistema
+        </LinkItem>
+        <LinkItem href="/works" path={path}>
+        Road map
+        </LinkItem>
+  
+      </Stack>
+       
         <Box>
           <Button variant="buttonPrimary">Comprar Token</Button>
         </Box>

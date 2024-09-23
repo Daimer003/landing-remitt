@@ -1,4 +1,5 @@
 import { Box, AspectRatio, Text } from "@chakra-ui/react";
+import Gradient from "./gradient";
 
 const SectionOne = () => {
   return (
@@ -9,7 +10,15 @@ const SectionOne = () => {
       w="100%"
       gap="30px"
       padding="20px"
+      position='relative'
     >
+
+      <Gradient 
+        left={-100}
+        top={-200}
+        background='var(--gradient-2)'
+       />
+
       <Box>
         <Text as="h3" color="black" fontSize="4xl" fontWeight="800">
           Bienvenido a Remitt
