@@ -7,6 +7,7 @@ const Gradient = ({background, ...props}: any) => {
     w='600px'
     h='600px'
     position='absolute'
+    zIndex={0}
     bg={background}
     {...props}
      />;

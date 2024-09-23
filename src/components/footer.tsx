@@ -14,24 +14,30 @@ const Footer = () => {
     >
       <Box
         display="flex"
-        alignItems="center"
-        justifyContent="center"
-        position="absolute"
         top="-50px"
         gap="20px"
         w="100%"
         maxW="1600px"
-        bg="var(--bg-gradient-card-3)"
-        padding="30px 20px"
-        borderRadius="50px"
+        position="absolute"
+        padding='20px'
       >
-        <Text as="p">
-          Según "The World Bank" Alrededor de 2000M de personas alrededor del
-          mundo están desbancarizadas, esto representa el 20% de la población.
-        </Text>
-        <Button w="200px" bg="white" color="black" borderRadius="50px">
-          Comprar token
-        </Button>
+        <Box
+          display="flex"
+          w="100%"
+          alignItems="center"
+          justifyContent="center"
+          bg="var(--bg-gradient-card-3)"
+          borderRadius="50px"
+          padding="30px 20px"
+        >
+          <Text as="p">
+            Según "The World Bank" Alrededor de 2000M de personas alrededor del
+            mundo están desbancarizadas, esto representa el 20% de la población.
+          </Text>
+          <Button minW="200px" bg="white" color="black" borderRadius="50px">
+            Comprar token
+          </Button>
+        </Box>
       </Box>
 
       <Box
@@ -49,7 +55,7 @@ const Footer = () => {
 
         <Box
           display="flex"
-          flexDir="row"
+          flexDir={{ base: "column", lg: "row" }}
           w="100%"
           maxW="1600px"
           padding="20px"
@@ -91,7 +97,7 @@ const Footer = () => {
         <Box display="flex" gap="40px" margin="40px 0" alignItems="center">
           <Box w="200px" h="auto">
             <Image
-              src="/assets/logo.webp"
+              src="/assets/remitt-logo-blanco.webp"
               alt="Imagen de binance"
               width={100}
               height={100}

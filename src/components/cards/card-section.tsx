@@ -28,7 +28,7 @@ const CardSection = ({
         bg={background}
         overflow="hidden"
       >
-        <Box display="flex" w="100%">
+        <Box display="flex" flexDir={{base: 'column', lg: 'row'}}alignItems='flex-end' w="100%">
           <Box
             display="flex"
             justifyContent="center"

@@ -1,4 +1,4 @@
-import { IconSvg1 } from "@/lib/icons";
+import { IconSvg1, IconSvg2, IconSvg3 } from "@/lib/icons";
 import { Box } from "@chakra-ui/react";
 
 const SectionEight = () => {
@@ -31,7 +31,7 @@ const SectionEight = () => {
             padding="40px"
             margin={5}
           >
-            <IconSvg1 size="30" />
+            <IconSvg1 size="40" />
           </Box>
           <Box
             display="flex"
@@ -45,7 +45,7 @@ const SectionEight = () => {
             padding="40px"
             margin={5}
           >
-            <IconSvg1 size="30" />
+            <IconSvg2 size="40" />
           </Box>
         </Box>
 
@@ -69,7 +69,7 @@ const SectionEight = () => {
             padding="40px"
             margin={5}
           >
-            <IconSvg1 size="30" />
+            <IconSvg3 size="20" />
           </Box>
           <Box
             display="flex"
@@ -83,7 +83,7 @@ const SectionEight = () => {
             padding="40px"
             margin={5}
           >
-            <IconSvg1 size="30" />
+            <IconSvg1 size="20" />
           </Box>
         </Box>
         <Box

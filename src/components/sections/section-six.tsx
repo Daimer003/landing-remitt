@@ -1,16 +1,27 @@
 import { Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import Gradient from "./gradient";
 
 const SectionSix = () => {
   return (
-    <Box w="100%" padding="20px" marginTop="180px">
+    <Box
+      w="100%"
+      display="flex"
+      position="relative"
+      padding="20px"
+      marginTop="180px"
+    >
+      <Gradient right={-100} top={-200} background="var(--gradient-1)" />
+
       <Box
         display="flex"
+        w='100%'
         flexDir="column"
         justifyContent="center"
         alignItems="center"
-        bg="rgba(0,0,0, 5%)"
-        position="relative"
+        border="1px solid #fff"
+        css={{ backdropFilter: "blur(6px)" }}
+        bg="#ffffff8e"
         padding="20px 20px 80px"
         borderRadius="20px"
       >
@@ -19,6 +30,7 @@ const SectionSix = () => {
           alignItems="center"
           position="absolute"
           top="-100px"
+          zIndex={15}
         >
           <Box maxW="250px" w="100%">
             <Image
