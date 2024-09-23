@@ -11,6 +11,7 @@ import SectionSix from "@/components/sections/section-six";
 import SectionSeven from "@/components/sections/section-seven";
 import SectionNine from "@/components/sections/section-nine";
 import Gradient from "@/components/sections/gradient";
+import SectionEight from "@/components/sections/section-eight";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -33,20 +34,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-
-      <Gradient 
-        right={-100}
-        top={-200}
-        background='var(--gradient-1)'
-       />
-
+        <Gradient right={-100} top={-200} background="var(--gradient-1)" />
         <Header />
         {/* VIDEO  */}
         <SectionOne />
         {/* TRABAJAMOS PARA INPULSAR */}
         <SectionTwo />
-        {/* ICONS */}
+
         <SectionThree />
+        {/* ICONS */}
+        <SectionEight />
         {/* ECOSYSTEMS */}
         <SectionFour />
         {/* ECOSISTEMA FINANCIERO */}
