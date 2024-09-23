@@ -6,6 +6,7 @@ const SectionThree = () => {
     <Box w="100%" position="relative" marginTop="80px" padding="20px">
       <Box
         display="flex"
+        flexDir={{base: 'column-reverse', md: 'row'}}
         w="100%"
         bg="var(--bg-gradient-card)"
         borderRadius="20px"

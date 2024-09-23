@@ -16,7 +16,7 @@ const Header = () => {
         display="flex"
         justifyContent="center"
         w="100%"
-        maxW={{base: "100%", md: "80%"}}
+        maxW={{ base: "100%", md: "80%" }}
         flexDir="column"
         minH="615px"
         backdropFilter="auto"
@@ -34,23 +34,23 @@ const Header = () => {
           flexDir="column"
           marginLeft={{ base: 0, xl: 200 }}
         >
-       <Box
+          <Box
             display="flex"
             justifyContent="center"
             flexDir="column"
             maxW='600px'
-       >
-       <Text as="h1" color="black" fontSize={{base: '2xl', md: "4xl"}} fontWeight="800" textAlign={{base: 'center', md: 'start'}}>
-            LA REVOLUCIÓN EN SERVICIOS  FINANCIEROS BLOCKCHAIN
-          </Text>
-          <Text as="p" color="black" textAlign={{base: 'center', md: 'start'}}>
-            Democratizamos el acceso a servicios financieros de calidad para
-            millones de personas des bancarizadas en todo el mundo.
-          </Text>
-          <Text as="p" color="var(--color-text-primary)" fontSize={{base: 'xl', md: "2xl"}} textAlign={{base: 'center', md: 'start'}}>
-            EMPOWERING FREEDOM
-          </Text>
-       </Box>
+          >
+            <Text as="h1" color="black" fontSize={{ base: '2xl', md: "4xl" }} fontWeight="800" textAlign={{ base: 'center', md: 'start' }}>
+              LA REVOLUCIÓN EN SERVICIOS  FINANCIEROS BLOCKCHAIN
+            </Text>
+            <Text as="p" color="black" textAlign={{ base: 'center', md: 'start' }}>
+              Democgitratizamos el acceso a servicios financieros de calidad para
+              millones de personas des bancarizadas en todo el mundo.
+            </Text>
+            <Text as="p" color="var(--color-text-primary)" fontSize={{ base: 'xl', md: "2xl" }} textAlign={{ base: 'center', md: 'start' }}>
+              EMPOWERING FREEDOM
+            </Text>
+          </Box>
         </Box>
       </Box>
 

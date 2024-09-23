@@ -1,3 +1,4 @@
+import { IconMenu } from "@/lib/icons";
 import {
   Box,
   Button,
@@ -10,7 +11,6 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import Link from "next/link";
 import NextLink from "next/link";
 
 interface LinkItemProps {
@@ -36,8 +36,8 @@ const LinkItem = ({
         display="inline-flex"
         alignItems="center"
         gap="5px"
-        fontSize='xl'
-        color='black'
+        fontSize="xl"
+        color="black"
         {...props}
       >
         {children}
@@ -83,26 +83,25 @@ const Navbar = (props: any) => {
           />
         </Box>
         <Stack
-        display={{ base: "none", md: "flex" }}
-        direction={{ base: "column", md: "row" }}
-        width={{ base: "full", md: "auto" }}
-        justifyContent='center'
-        alignItems="center"
-        flexGrow={1}
-        mt={{ base: 4, md: 0 }}
-      >
-         <LinkItem href="/works" path={path}>
-         Nosotros
-        </LinkItem>
-        <LinkItem href="/works" path={path}>
-        Ecosistema
-        </LinkItem>
-        <LinkItem href="/works" path={path}>
-        Road map
-        </LinkItem>
-  
-      </Stack>
-       
+          display={{ base: "none", md: "flex" }}
+          direction={{ base: "column", md: "row" }}
+          width={{ base: "full", md: "auto" }}
+          justifyContent="center"
+          alignItems="center"
+          flexGrow={1}
+          mt={{ base: 4, md: 0 }}
+        >
+          <LinkItem href="/#" path={path}>
+            Nosotros
+          </LinkItem>
+          <LinkItem href="/#" path={path}>
+            Ecosistema
+          </LinkItem>
+          <LinkItem href="/#" path={path}>
+            Road map
+          </LinkItem>
+        </Stack>
+
         <Box>
           <Button variant="buttonPrimary">Comprar Token</Button>
         </Box>
@@ -114,16 +113,29 @@ const Navbar = (props: any) => {
         justifyContent="flex-end"
       >
         <Button colorScheme="blue" onClick={onOpen}>
-          Menu
+          <IconMenu size="24" />
         </Button>
       </Box>
 
       <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent bg="white" color="black">
+        <DrawerContent bg="var(--background)" color="black">
           <DrawerHeader borderBottomWidth="1px">X</DrawerHeader>
           <DrawerBody>
-            <p>Some contents...</p>
+            <Stack
+              display={{ base: "flex", md: "none" }}
+              direction="column"
+            >
+              <LinkItem href="/#" path={path}>
+                Nosotros
+              </LinkItem>
+              <LinkItem href="/#" path={path}>
+                Ecosistema
+              </LinkItem>
+              <LinkItem href="/#" path={path}>
+                Road map
+              </LinkItem>
+            </Stack>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
