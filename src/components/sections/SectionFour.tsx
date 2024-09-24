@@ -1,5 +1,6 @@
 import { Box, Wrap, WrapItem, Center } from "@chakra-ui/react";
 import CardEcosystem from "../cards/card-ecosystem";
+import Gradient from "./gradient";
 
 const SectionFour = () => {
   return (
@@ -10,7 +11,10 @@ const SectionFour = () => {
       w="100%"
       padding="20px"
       marginTop="80px"
+      position="relative"
     >
+      <Gradient left={-100} top={-200} background="var(--gradient-2)" />
+
       <Box
         display="flex"
         w="100%"
