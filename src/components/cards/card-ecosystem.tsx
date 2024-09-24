@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const CardEcosystem = () => {
   return (
-    <Box display="flex" alignItems="center" w="100%" position="relative">
+    <Box display="flex" alignItems="center" w="100%" maxW='500px' position="relative">
       <Box display="flex" alignItems="center" w="100%">
         <Box w="60px" display="flex" position="absolute" left={0}>
           <Image
@@ -15,8 +15,8 @@ const CardEcosystem = () => {
         </Box>
         <Box
           w="100%"
-          bg="white"
-          border="2px solid var(--color-border-2)"
+          bg="#ffffff82"
+         // border="2px solid var(--color-border-2)"
           padding=" 40px 20px"
           borderRadius="16px"
           marginLeft="30px"

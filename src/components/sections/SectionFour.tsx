@@ -11,31 +11,37 @@ const SectionFour = () => {
       padding="20px"
       marginTop="80px"
     >
-      <Wrap spacing="30px" align="center">
-        <WrapItem>
-          <Center w="500px">
-            <CardEcosystem />
-          </Center>
-        </WrapItem>
+      <Box
+        display="flex"
+        w="100%"
+        flexDir="column"
+        justifyContent="center"
+        gap="20px"
+      >
+        <Box
+          display="flex"
+          w="100%"
+          flexDir={{ base: "column", lg: "row" }}
+          justifyContent="center"
+          alignItems="center"
+          gap="20px"
+        >
+          <CardEcosystem />
+          <CardEcosystem />
+        </Box>
 
-        <WrapItem>
-          <Center w="500px">
-            <CardEcosystem />
-          </Center>
-        </WrapItem>
-
-        <WrapItem>
-          <Center w="500px">
-            <CardEcosystem />
-          </Center>
-        </WrapItem>
-
-        <WrapItem>
-          <Center w="500px">
-            <CardEcosystem />
-          </Center>
-        </WrapItem>
-      </Wrap>
+        <Box
+          display="flex"
+          w="100%"
+          flexDir={{ base: "column", lg: "row" }}
+          justifyContent="center"
+          alignItems="center"
+          gap="20px"
+        >
+          <CardEcosystem />
+          <CardEcosystem />
+        </Box>
+      </Box>
     </Box>
   );
 };

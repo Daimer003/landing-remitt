@@ -28,10 +28,10 @@ const SectionEight = () => {
             css={{ backdropFilter: "blur(6px)" }}
             bg="#dbdbdb53"
             borderRadius="28px"
-            padding="40px"
+            padding="30px"
             margin={5}
           >
-            <IconSvg1 size="40" />
+            <IconSvg1 size="30" />
           </Box>
           <Box
             display="flex"
@@ -42,10 +42,10 @@ const SectionEight = () => {
             css={{ backdropFilter: "blur(6px)" }}
             bg="#dbdbdb53"
             borderRadius="28px"
-            padding="40px"
+            padding="30px"
             margin={5}
           >
-            <IconSvg2 size="40" />
+            <IconSvg2 size="30" />
           </Box>
         </Box>
 
@@ -66,10 +66,10 @@ const SectionEight = () => {
             css={{ backdropFilter: "blur(6px)" }}
             bg="#ffffff52"
             borderRadius="28px"
-            padding="40px"
+            padding="30px"
             margin={5}
           >
-            <IconSvg3 size="20" />
+            <IconSvg3 size="30" />
           </Box>
           <Box
             display="flex"
@@ -80,10 +80,10 @@ const SectionEight = () => {
             css={{ backdropFilter: "blur(6px)" }}
             bg="#dbdbdb53"
             borderRadius="28px"
-            padding="40px"
+            padding="30px"
             margin={5}
           >
-            <IconSvg1 size="20" />
+            <IconSvg1 size="30" />
           </Box>
         </Box>
         <Box
@@ -103,7 +103,7 @@ const SectionEight = () => {
             css={{ backdropFilter: "blur(6px)" }}
             bg="#dbdbdb53"
             borderRadius="28px"
-            padding="40px"
+            padding="30px"
             margin={5}
           >
             <IconSvg1 size="30" />
@@ -117,7 +117,7 @@ const SectionEight = () => {
             css={{ backdropFilter: "blur(6px)" }}
             bg="#dbdbdb53"
             borderRadius="28px"
-            padding="40px"
+            padding="30px"
             margin={5}
           >
             <IconSvg1 size="30" />
