@@ -20,7 +20,7 @@ const CardSection = ({
   direction,
 }: Props) => {
   return (
-    <Box w="100%" position="relative" marginTop="80px" padding="20px">
+    <Box w="100%" position="relative" padding="20px">
       <Box
         w="100%"
         position="relative"
@@ -28,7 +28,12 @@ const CardSection = ({
         bg={background}
         overflow="hidden"
       >
-        <Box display="flex" flexDir={{base: 'column', lg: 'row'}}alignItems='flex-end' w="100%">
+        <Box
+          display="flex"
+          flexDir={{ base: "column", lg: "row" }}
+          alignItems="flex-end"
+          w="100%"
+        >
           <Box
             display="flex"
             justifyContent="center"

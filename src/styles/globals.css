@@ -13,7 +13,7 @@
   --bg-gradient-card-3: linear-gradient(90deg, rgb(188, 139, 251) 0%, rgb(142, 59, 250) 100%);
   --bg-gradient-card-4: linear-gradient(90deg, rgba(201,241,243,1) 0%, rgba(118,182,244,1) 45%, rgba(29,21,80,1) 100%);
   --bg-gradient-card-5: linear-gradient(90deg,  rgba(187,139,251,1) 0%, rgba(161,204,249,1) 100%);
-
+  --bg-gradient-card-6: linear-gradient(90deg, rgba(132,46,245,0.7161458333333333) 0%, rgba(2,0,36,0) 48%);
 
   --gradient-1: radial-gradient(circle, rgba(0, 255, 183, 0.626) 0%, rgba(2,0,36,0) 67%);
   --gradient-2: radial-gradient(circle, rgba(44, 150, 242, 0.526) 0%, rgba(2,0,36,0) 67%);

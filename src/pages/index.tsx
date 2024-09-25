@@ -5,13 +5,14 @@ import Footer from "@/components/footer";
 import SectionOne from "@/components/sections/section-one";
 import SectionTwo from "@/components/sections/section-two";
 import SectionThree from "@/components/sections/section-three";
-import SectionFour from "@/components/sections/SectionFour";
+import SectionFour from "@/components/sections/sectionFour";
 import SectionFive from "@/components/sections/section-five";
 import SectionSix from "@/components/sections/section-six";
 import SectionSeven from "@/components/sections/section-seven";
 import SectionNine from "@/components/sections/section-nine";
 import Gradient from "@/components/sections/gradient";
 import SectionEight from "@/components/sections/section-eight";
+import SectionEleven from "@/components/sections/section-eleven";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -52,6 +53,8 @@ export default function Home() {
         <SectionSix />
 
         <SectionSeven />
+
+        <SectionEleven />
 
         <SectionNine />
       </Layout>

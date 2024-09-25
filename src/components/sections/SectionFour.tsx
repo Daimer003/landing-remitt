@@ -1,4 +1,4 @@
-import { Box, Wrap, WrapItem, Center } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import CardEcosystem from "../cards/card-ecosystem";
 import Gradient from "./gradient";
 
