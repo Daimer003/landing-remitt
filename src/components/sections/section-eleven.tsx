@@ -6,10 +6,10 @@ const SectionEleven = () => {
     <Box
       display="flex"
       w="100%"
-      flexDir="row"
+      flexDir={{base:"column", md: "row"}}
       marginTop="140px"
       padding="20px"
-      gap='20px'
+      gap={{base: '150px', md: '20px'}}
     >
       <CardProduct />
       <CardProduct />

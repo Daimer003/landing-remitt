@@ -24,6 +24,7 @@ const CardProduct = () => {
           height={200}
         />
       </Box>
+      
       <Box
         display="flex"
         justifyContent="center"
